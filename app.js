@@ -46,8 +46,7 @@
 
         toBuy.bought = function(itemIndex){
 
-            //console.log(name ," of ",qty);
-            ShoppingListService.addItem(itemIndex);
+        ShoppingListService.addItem(itemIndex);
 
         }
 
@@ -75,14 +74,7 @@
             console.log("toBuyList:" ,toBuyList);
             boughtList.push(toBuyList[itemIndex]);
             var newItem = toBuyList.splice(itemIndex,1);
-            // name = newItem[0].name;
-            // qty = newItem[0].qty;
-            //  console.log("name :",name ,"qty :",qty);
-            //  var items = {
-            //     name :name,
-            //     qty :qty
-            //  };
-            //   boughtList.push(newItem);
+ 
             console.log("BoughtList: ",boughtList);
 
         }
